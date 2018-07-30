@@ -32,6 +32,15 @@ FLAGS(sys.argv)
 ```
 under **FLAGS =flags.FLAGS** <br>
 
+#### update by parap1uie-s @ 20180730
+```
+In fact, you don't have the needs to edit __init__.py as above.
+
+Modify the enter main script like main.py will be fine.
+
+For example: https://github.com/DeeCamp18-RL/pysc2-rl-agent-edited
+```
+
 **screen_size_px** and **minimap_size_px** are the features in PySC2 v1.2. They are deprecated in PySC2 v2.0. One can change the pysc2 to the version 1.2(recommend), or use **agent_interface_format** to replace **screen_size_px** and **minimap_size_px**.
 
 when raise the error of atari_py of baselines installation, like *HINT:are you sure make/cmake is installed*, you can install atari-py independently as
