@@ -1,0 +1,5 @@
+tensorflow-gpu==1.4
+futures==3.1.1
+pysc2==1.2
+--no-index -f https://github.com/Kojoley/atari-py/releases atari_py
+baselines
