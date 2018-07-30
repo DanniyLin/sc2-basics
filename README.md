@@ -13,11 +13,27 @@ Install the PySC2 by pip:
 ```
 pip3 install pysc2==1.2
 ```
-When System requires Python '>=2.6,<3', please update futures:
-```
-pip3 install futures==3.1.1
-```
 Test the PySC2 as:
 ```
 python -m pysc2.bin.agent --map CollectMineralShards
 ```
+### Debug
+When System requires Python '>=2.6,<3', please update futures:
+```
+pip3 install futures==3.1.1
+```
+then install PySC2 again.<br>
+
+When raise _exceptions.UnparesedFlagAccessError,
+Please open ...\site-packages\pysc2\sun_configs\__init__.py (windows), and add 
+```
+import sys
+FLAGS(sys.argv)
+```
+under **FLAGS =flags.FLAGS** <br>
+
+
+
+
+
+
